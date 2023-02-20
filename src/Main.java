@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         task1();
+        task2();
 
     }
 
@@ -15,5 +16,23 @@ public class Main {
             System.out.println("Если возраст человека равен " + age2 + ", то он не достиг совершеннолетия, нужно немного подождать");
         }
     }
+
+    public static void task2() {
+        System.out.println("            Задача 2");
+        int temperature1 = 2;
+        int temperature2 = 7;
+        if (temperature1 >=5) {
+            System.out.println("На улице " + temperature1 + " градусов,можно идти без шапки");
+        }
+        else {
+            System.out.println("На улице " + temperature1 + " градусов,нужно надеть шапку");
+        }
+        if (temperature2 >=5) {
+            System.out.println("На улице " + temperature2 + " градусов,можно идти без шапки");
+        }
+        else {
+            System.out.println("На улице " + temperature2 + " градусов,нужно надеть шапку");
+        }
+            }
 }
 
