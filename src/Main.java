@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
 
     }
 
@@ -126,68 +127,111 @@ public class Main {
         boolean thereIsAnAdult4 = true;
 
         boolean canRide1 = age1 >= 14;
-        boolean withoutAdult1 = age1 >= 5 && age1 <14;
-        boolean canRideWithAdult1 = age1 >=5 && age1 < 14 && thereIsAnAdult1;
+        boolean withoutAdult1 = age1 >= 5 && age1 < 14;
+        boolean canRideWithAdult1 = age1 >= 5 && age1 < 14 && thereIsAnAdult1;
 
         boolean canRide2 = age2 >= 14;
-        boolean withoutAdult2 = age2 >= 5 && age2 <14;
-        boolean canRideWithAdult2 = age2 >=5 && age2 < 14 && thereIsAnAdult2;
+        boolean withoutAdult2 = age2 >= 5 && age2 < 14;
+        boolean canRideWithAdult2 = age2 >= 5 && age2 < 14 && thereIsAnAdult2;
 
         boolean canRide3 = age3 >= 14;
-        boolean withoutAdult3 = age3 >= 5 && age3 <14;
-        boolean canRideWithAdult3 = age3 >=5 && age3 < 14 && thereIsAnAdult3;
+        boolean withoutAdult3 = age3 >= 5 && age3 < 14;
+        boolean canRideWithAdult3 = age3 >= 5 && age3 < 14 && thereIsAnAdult3;
 
         boolean canRide4 = age4 >= 14;
-        boolean withoutAdult4 = age4 >= 5 && age4 <14;
-        boolean canRideWithAdult4 = age4 >=5 && age4 < 14 && thereIsAnAdult4;
+        boolean withoutAdult4 = age4 >= 5 && age4 < 14;
+        boolean canRideWithAdult4 = age4 >= 5 && age4 < 14 && thereIsAnAdult4;
 
         if (canRide1) {
-            System.out.println("Если возраст ребенка равен " +age1+ ", то ему можно кататься на аттракционе без сопровождения взрослого");
+            System.out.println("Если возраст ребенка равен " + age1 + ", то ему можно кататься на аттракционе без сопровождения взрослого");
         } else if (canRideWithAdult1) {
-            System.out.println("Если возраст ребенка равен " +age1+ ", то ему можно кататься на аттракционе в сопровождении");
-                    }
-        else if (withoutAdult1){
-            System.out.println("Если возраст ребенка равен " +age1+ ", то ему нельзя кататься на аттракционе без сопровождения");
-        }
-        else {
-            System.out.println("Если возраст ребенка равен " +age1+ ", то ему нельзя кататься на аттракционе");
+            System.out.println("Если возраст ребенка равен " + age1 + ", то ему можно кататься на аттракционе в сопровождении");
+        } else if (withoutAdult1) {
+            System.out.println("Если возраст ребенка равен " + age1 + ", то ему нельзя кататься на аттракционе без сопровождения");
+        } else {
+            System.out.println("Если возраст ребенка равен " + age1 + ", то ему нельзя кататься на аттракционе");
         }
 
         if (canRide2) {
-            System.out.println("Если возраст ребенка равен " +age2+ ", то ему можно кататься на аттракционе без сопровождения взрослого");
+            System.out.println("Если возраст ребенка равен " + age2 + ", то ему можно кататься на аттракционе без сопровождения взрослого");
         } else if (canRideWithAdult2) {
-            System.out.println("Если возраст ребенка равен " +age2+ ", то ему можно кататься на аттракционе в сопровождении");
-        }
-        else if (withoutAdult2){
-            System.out.println("Если возраст ребенка равен " +age2+ ", то ему нельзя кататься на аттракционе без сопровождения");
-        }
-        else {
-            System.out.println("Если возраст ребенка равен " +age2+ ", то ему нельзя кататься на аттракционе");
+            System.out.println("Если возраст ребенка равен " + age2 + ", то ему можно кататься на аттракционе в сопровождении");
+        } else if (withoutAdult2) {
+            System.out.println("Если возраст ребенка равен " + age2 + ", то ему нельзя кататься на аттракционе без сопровождения");
+        } else {
+            System.out.println("Если возраст ребенка равен " + age2 + ", то ему нельзя кататься на аттракционе");
         }
 
         if (canRide3) {
-            System.out.println("Если возраст ребенка равен " +age3+ ", то ему можно кататься на аттракционе без сопровождения взрослого");
+            System.out.println("Если возраст ребенка равен " + age3 + ", то ему можно кататься на аттракционе без сопровождения взрослого");
         } else if (canRideWithAdult3) {
-            System.out.println("Если возраст ребенка равен " +age3+ ", то ему можно кататься на аттракционе в сопровождении");
-        }
-        else if (withoutAdult3){
-            System.out.println("Если возраст ребенка равен " +age3+ ", то ему нельзя кататься на аттракционе без сопровождения");
-        }
-        else {
-            System.out.println("Если возраст ребенка равен " +age3+ ", то ему нельзя кататься на аттракционе");
+            System.out.println("Если возраст ребенка равен " + age3 + ", то ему можно кататься на аттракционе в сопровождении");
+        } else if (withoutAdult3) {
+            System.out.println("Если возраст ребенка равен " + age3 + ", то ему нельзя кататься на аттракционе без сопровождения");
+        } else {
+            System.out.println("Если возраст ребенка равен " + age3 + ", то ему нельзя кататься на аттракционе");
         }
         if (canRide4) {
-            System.out.println("Если возраст ребенка равен " +age4+ ", то ему можно кататься на аттракционе без сопровождения взрослого");
+            System.out.println("Если возраст ребенка равен " + age4 + ", то ему можно кататься на аттракционе без сопровождения взрослого");
         } else if (canRideWithAdult4) {
-            System.out.println("Если возраст ребенка равен " +age4+ ", то ему можно кататься на аттракционе в сопровождении");
+            System.out.println("Если возраст ребенка равен " + age4 + ", то ему можно кататься на аттракционе в сопровождении");
+        } else if (withoutAdult4) {
+            System.out.println("Если возраст ребенка равен " + age4 + ", то ему нельзя кататься на аттракционе без сопровождения");
+        } else {
+            System.out.println("Если возраст ребенка равен " + age4 + ", то ему нельзя кататься на аттракционе");
         }
-        else if (withoutAdult4){
-            System.out.println("Если возраст ребенка равен " +age4+ ", то ему нельзя кататься на аттракционе без сопровождения");
+    }
+
+        public static void task6() {
+            System.out.println("          Задача 6");
+        int peopleInTheWagon1 = 76;
+        int peopleInTheWagon2 = 102;
+        int peopleInTheWagon3 = 32;
+        int fullWagon = 102;
+        int saeting = 60;
+
+        boolean thereAreSeats1 = peopleInTheWagon1 < saeting;
+        boolean thereAreStandingPlaces1 = peopleInTheWagon1 >= 60 && peopleInTheWagon1 < 102;
+
+        boolean thereAreSeats2 = peopleInTheWagon2 < saeting;
+        boolean thereAreStandingPlaces2 = peopleInTheWagon2 >= 60 && peopleInTheWagon2 < 102;
+
+        boolean thereAreSeats3 = peopleInTheWagon3 < saeting;
+        boolean thereAreStandingPlaces3 = peopleInTheWagon3 >= 60 && peopleInTheWagon3 < 102;
+
+        if (thereAreSeats1) {
+                   System.out.println ("Если в вагоне " +peopleInTheWagon1+
+                           " людей, то осталось " +(saeting-peopleInTheWagon1)+ " сидячих мест и " + (fullWagon-saeting)+ " стоячих иест");
+        }
+        else if (thereAreStandingPlaces1) {
+            System.out.println("Если в вагоне " +peopleInTheWagon1+ " людей, то осталось " +(fullWagon-peopleInTheWagon1)+ " стоячих мест");
         }
         else {
-            System.out.println("Если возраст ребенка равен " +age4+ ", то ему нельзя кататься на аттракционе");
+            System.out.println("В вагоне мест нет");
         }
 
+        if (thereAreSeats2) {
+                System.out.println ("Если в вагоне " +peopleInTheWagon2+
+                        " людей, то осталось " +(saeting-peopleInTheWagon2)+ " сидячих мест и " + (fullWagon-saeting)+ " стоячих иест");
+            }
+            else if (thereAreStandingPlaces2) {
+                System.out.println("Если в вагоне " +peopleInTheWagon2+ " людей, то осталось " +(fullWagon-peopleInTheWagon2)+ " стоячих мест");
+            }
+            else {
+                System.out.println("В вагоне мест нет");
+            }
+        if (thereAreSeats3) {
+                System.out.println ("Если в вагоне " +peopleInTheWagon3+
+                        " людей, то осталось " +(saeting-peopleInTheWagon3)+ " сидячих мест и " + (fullWagon-saeting)+ " стоячих иест");
+            }
+            else if (thereAreStandingPlaces3) {
+                System.out.println("Если в вагоне " +peopleInTheWagon3+ " людей, то осталось " +(fullWagon-peopleInTheWagon3)+ " стоячих мест");
+            }
+            else {
+                System.out.println("В вагоне мест нет");
+            }
     }
+
+
 }
 
