@@ -215,7 +215,7 @@ public class Main {
         }
     }
 
-        public static void task6() {
+    public static void task6() {
             System.out.println("          Задача 6");
             int peopleInTheWagon1 = 76;
             int peopleInTheWagon2 = 102;
@@ -258,35 +258,36 @@ public class Main {
                 System.out.println("В вагоне мест нет");
             }
         }
+
         public static void task7() {
             System.out.println("          Задача 7");
 
-            int one = 120;
-            int two = 107;
-            int three = 209;
+            int one = 140;
+            int two = 130;
+            int three = 140;
 
-            if (one > two && one > three && two>three) {
-                System.out.println("Самое большее число " + one+ " число значением меньше "+two+ " самое меньшее число " +three);
+            if (one == two && one == three) {
+                System.out.println("Все числа равны " + one);
             }
-            else if (one > two && one > three && three>two) {
-                System.out.println("Самое большее число " + one+ " число значением меньше "+three+ " самое меньшее число " +two);
-            }
-            else if (two > one && two > three && one>three){
-                System.out.println("Самое большее число " + two+ " число значением меньше "+one+ " самое меньшее число " +three);
-            }
-            else if (two > one && two > three && three>one){
-                System.out.println("Самое большее число " + two+ " число значением меньше "+three+ " самое меньшее число " +one);
-            }
-            else if (three > one && three > two && one>two){
-                System.out.println("Самое большее число " + three+ " число значением меньше "+one+ " самое меньшее число " +two);
-            }
-            else  {
-                System.out.println("Самое большее число " + three+ " число значением меньше "+two+ " самое меньшее число " +one);
+            else if (one >= two && one >= three) {
+                if (one == two) {
+                    System.out.println("Самые большие  числа 1 и 2 равны " + one + " и равны между собой, число значением меньше " + three);
+                }
+                else if (two == three){
+                    System.out.println("Самое большее число " + one + " числа 2 и 3 равны между собой и равны " +two);
+                }
+                else if (two > three) {
+                    System.out.println("Самое большее число " + one + " второе по старшенству число " + two + " самое маленькое число " +three);
+                }
+                else if (three > two && three != one) {
+                    System.out.println("Самое большее число " + one + " второе по старшенству число " + three + " самое маленькое число " + two);
+                }
+                else {
+                    System.out.println("Самые большие  числа 1 и 3 равны " + one + " и равны между собой, число значением меньше " + two);
+                }
             }
 
-
-
-    }
+        }
 
 
 }
