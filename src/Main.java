@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
 
     }
 
@@ -21,18 +22,33 @@ public class Main {
         System.out.println("            Задача 2");
         int temperature1 = 2;
         int temperature2 = 7;
-        if (temperature1 >=5) {
+        if (temperature1 >= 5) {
             System.out.println("На улице " + temperature1 + " градусов,можно идти без шапки");
-        }
-        else {
+        } else {
             System.out.println("На улице " + temperature1 + " градусов,нужно надеть шапку");
         }
-        if (temperature2 >=5) {
+        if (temperature2 >= 5) {
             System.out.println("На улице " + temperature2 + " градусов,можно идти без шапки");
-        }
-        else {
+        } else {
             System.out.println("На улице " + temperature2 + " градусов,нужно надеть шапку");
         }
-            }
+    }
+
+    public static void task3() {
+        System.out.println("            Задача 3");
+        int speed1 = 70;
+        int speed2 = 50;
+
+        if (speed1 >= 60) {
+            System.out.println("Если скорость " + speed1 + " км/ч, то придется заплатить штраф.");
+        } else {
+            System.out.println("Если скорость " + speed1 + " км/ч, то можно ездить спокойно.");
+        }
+        if (speed2 >= 60) {
+            System.out.println("Если скорость " + speed2 + " км/ч, то придется заплатить штраф.");
+        } else {
+            System.out.println("Если скорость " + speed2 + " км/ч, то можно ездить спокойно.");
+        }
+    }
 }
 
