@@ -68,10 +68,9 @@ public class Main {
         boolean university = age1 >= 18 && age1 < 24;
 
 
-        if (age1 <2) {
+        if (age1 < 2) {
             System.out.println("Если возраст человека равен " + age1 + " то он еще маленький");
-        }
-        else if (nursery) {
+        } else if (nursery) {
             System.out.println("Если возраст человека равен " + age1 + ", то ему нужно ходить в детский сад");
         } else if (school) {
             System.out.println("Если возраст человека равен " + age1 + ", то ему нужно ходить в школу");
@@ -85,10 +84,9 @@ public class Main {
         boolean school2 = age2 >= 7 && age2 < 18;
         boolean university2 = age2 >= 18 && age2 < 24;
 
-        if (age2 <2) {
+        if (age2 < 2) {
             System.out.println("Если возраст человека равен " + age2 + " то он еще маленький");
-        }
-        else if (nursery2) {
+        } else if (nursery2) {
             System.out.println("Если возраст человека равен " + age2 + ", то ему нужно ходить в детский сад");
         } else if (school2) {
             System.out.println("Если возраст человека равен " + age2 + ", то ему нужно ходить в школу");
@@ -101,10 +99,9 @@ public class Main {
         boolean school3 = age3 >= 7 && age3 < 18;
         boolean university3 = age3 >= 18 && age3 < 24;
 
-        if (age3 <2) {
+        if (age3 < 2) {
             System.out.println("Если возраст человека равен " + age3 + " то он еще маленький");
-        }
-        else if (nursery3) {
+        } else if (nursery3) {
             System.out.println("Если возраст человека равен " + age3 + ", то ему нужно ходить в детский сад");
         } else if (school3) {
             System.out.println("Если возраст человека равен " + age3 + ", то ему нужно ходить в школу");
@@ -117,10 +114,9 @@ public class Main {
         boolean school4 = age4 >= 7 && age4 < 18;
         boolean university4 = age4 >= 18 && age4 < 24;
 
-        if (age4 <2) {
+        if (age4 < 2) {
             System.out.println("Если возраст человека равен " + age4 + " то он еще маленький");
-        }
-        else if (nursery4) {
+        } else if (nursery4) {
             System.out.println("Если возраст человека равен " + age4 + ", то ему нужно ходить в детский сад");
         } else if (school4) {
             System.out.println("Если возраст человека равен " + age4 + ", то ему нужно ходить в школу");
@@ -134,10 +130,9 @@ public class Main {
         boolean school5 = age5 >= 7 && age5 < 18;
         boolean university5 = age5 >= 18 && age5 < 24;
 
-        if (age5 <2) {
+        if (age5 < 2) {
             System.out.println("Если возраст человека равен " + age5 + " то он еще маленький");
-        }
-        else  if (nursery5) {
+        } else if (nursery5) {
             System.out.println("Если возраст человека равен " + age5 + ", то ему нужно ходить в детский сад");
         } else if (school4) {
             System.out.println("Если возраст человека равен " + age5 + ", то ему нужно ходить в школу");
@@ -216,79 +211,121 @@ public class Main {
     }
 
     public static void task6() {
-            System.out.println("          Задача 6");
-            int peopleInTheWagon1 = 76;
-            int peopleInTheWagon2 = 102;
-            int peopleInTheWagon3 = 32;
-            int fullWagon = 102;
-            int saeting = 60;
+        System.out.println("          Задача 6");
+        int peopleInTheWagon1 = 76;
+        int peopleInTheWagon2 = 102;
+        int peopleInTheWagon3 = 32;
+        int fullWagon = 102;
+        int saeting = 60;
 
-            boolean thereAreSeats1 = peopleInTheWagon1 < saeting;
-            boolean thereAreStandingPlaces1 = peopleInTheWagon1 >= 60 && peopleInTheWagon1 < 102;
+        boolean thereAreSeats1 = peopleInTheWagon1 < saeting;
+        boolean thereAreStandingPlaces1 = peopleInTheWagon1 >= 60 && peopleInTheWagon1 < 102;
 
-            boolean thereAreSeats2 = peopleInTheWagon2 < saeting;
-            boolean thereAreStandingPlaces2 = peopleInTheWagon2 >= 60 && peopleInTheWagon2 < 102;
+        boolean thereAreSeats2 = peopleInTheWagon2 < saeting;
+        boolean thereAreStandingPlaces2 = peopleInTheWagon2 >= 60 && peopleInTheWagon2 < 102;
 
-            boolean thereAreSeats3 = peopleInTheWagon3 < saeting;
-            boolean thereAreStandingPlaces3 = peopleInTheWagon3 >= 60 && peopleInTheWagon3 < 102;
+        boolean thereAreSeats3 = peopleInTheWagon3 < saeting;
+        boolean thereAreStandingPlaces3 = peopleInTheWagon3 >= 60 && peopleInTheWagon3 < 102;
 
-            if (thereAreSeats1) {
-                System.out.println("Если в вагоне " + peopleInTheWagon1 +
-                        " людей, то осталось " + (saeting - peopleInTheWagon1) + " сидячих мест и " + (fullWagon - saeting) + " стоячих иест");
-            } else if (thereAreStandingPlaces1) {
-                System.out.println("Если в вагоне " + peopleInTheWagon1 + " людей, то осталось " + (fullWagon - peopleInTheWagon1) + " стоячих мест");
-            } else {
-                System.out.println("В вагоне мест нет");
-            }
-
-            if (thereAreSeats2) {
-                System.out.println("Если в вагоне " + peopleInTheWagon2 +
-                        " людей, то осталось " + (saeting - peopleInTheWagon2) + " сидячих мест и " + (fullWagon - saeting) + " стоячих иест");
-            } else if (thereAreStandingPlaces2) {
-                System.out.println("Если в вагоне " + peopleInTheWagon2 + " людей, то осталось " + (fullWagon - peopleInTheWagon2) + " стоячих мест");
-            } else {
-                System.out.println("В вагоне мест нет");
-            }
-            if (thereAreSeats3) {
-                System.out.println("Если в вагоне " + peopleInTheWagon3 +
-                        " людей, то осталось " + (saeting - peopleInTheWagon3) + " сидячих мест и " + (fullWagon - saeting) + " стоячих иест");
-            } else if (thereAreStandingPlaces3) {
-                System.out.println("Если в вагоне " + peopleInTheWagon3 + " людей, то осталось " + (fullWagon - peopleInTheWagon3) + " стоячих мест");
-            } else {
-                System.out.println("В вагоне мест нет");
-            }
+        if (thereAreSeats1) {
+            System.out.println("Если в вагоне " + peopleInTheWagon1 +
+                    " людей, то осталось " + (saeting - peopleInTheWagon1) + " сидячих мест и " + (fullWagon - saeting) + " стоячих иест");
+        }
+        else if (thereAreStandingPlaces1) {
+            System.out.println("Если в вагоне " + peopleInTheWagon1 + " людей, то осталось " + (fullWagon - peopleInTheWagon1) + " стоячих мест");
+        }
+        else {
+            System.out.println("В вагоне мест нет");
         }
 
-        public static void task7() {
+        if (thereAreSeats2) {
+            System.out.println("Если в вагоне " + peopleInTheWagon2 +
+                    " людей, то осталось " + (saeting - peopleInTheWagon2) + " сидячих мест и " + (fullWagon - saeting) + " стоячих иест");
+        }
+        else if (thereAreStandingPlaces2) {
+            System.out.println("Если в вагоне " + peopleInTheWagon2 + " людей, то осталось " + (fullWagon - peopleInTheWagon2) + " стоячих мест");
+        }
+        else {
+            System.out.println("В вагоне мест нет");
+        }
+        if (thereAreSeats3) {
+            System.out.println("Если в вагоне " + peopleInTheWagon3 +
+                    " людей, то осталось " + (saeting - peopleInTheWagon3) + " сидячих мест и " + (fullWagon - saeting) + " стоячих иест");
+        }
+        else if (thereAreStandingPlaces3) {
+            System.out.println("Если в вагоне " + peopleInTheWagon3 + " людей, то осталось " + (fullWagon - peopleInTheWagon3) + " стоячих мест");
+        }
+        else {
+            System.out.println("В вагоне мест нет");
+        }
+    }
+
+    public static void task7() {
             System.out.println("          Задача 7");
 
-            int one = 140;
-            int two = 130;
-            int three = 140;
+            int one = 150;
+            int two = 150;
+            int three = 150;
 
             if (one == two && one == three) {
                 System.out.println("Все числа равны " + one);
             }
             else if (one >= two && one >= three) {
-                if (one == two) {
-                    System.out.println("Самые большие  числа 1 и 2 равны " + one + " и равны между собой, число значением меньше " + three);
-                }
-                else if (two == three){
-                    System.out.println("Самое большее число " + one + " числа 2 и 3 равны между собой и равны " +two);
+                if (one == two || one == three) {
+                    if (one == two) {
+                        System.out.println("Самые большие  числа 1 и 2 равны " + one + " и равны между собой, число значением меньше " + three);
+                    } else{
+                        System.out.println("Самые большие  числа 1 и 3 равны " + one + " и равны между собой, число значением меньше " + two);
+                    }
                 }
                 else if (two > three) {
                     System.out.println("Самое большее число " + one + " второе по старшенству число " + two + " самое маленькое число " +three);
                 }
-                else if (three > two && three != one) {
+                else if (three > two) {
                     System.out.println("Самое большее число " + one + " второе по старшенству число " + three + " самое маленькое число " + two);
                 }
                 else {
-                    System.out.println("Самые большие  числа 1 и 3 равны " + one + " и равны между собой, число значением меньше " + two);
+                    System.out.println("Самое большее число " + one + " числа 2 и 3 равны между собой и равны " + two);
+                }
+            }
+            else if (two >= one && two >= three) {
+                if (one == two || two == three) {
+                    if (one == two) {
+                        System.out.println("Самые большие  числа 1 и 2 равны " + one + " и равны между собой, число значением меньше " + three);
+                    } else{
+                        System.out.println("Самые большие  числа 2 и 3 равны " + two + " и равны между собой, число значением меньше " + one);
+                    }
+                }
+                else if (one > three) {
+                    System.out.println("Самое большее число " + two + " второе по старшенству число " + one + " самое маленькое число " +three);
+                }
+                else if (three > one) {
+                    System.out.println("Самое большее число " + two + " второе по старшенству число " + three + " самое маленькое число " + one);
+                }
+                else {
+                    System.out.println("Самое большее число " + two + " числа 1 и 3 равны между собой и равны " + one);
+                }
+            }
+            else if (three >= one && three >= two) {
+                if (one == three || two == three) {
+                    if (three == one) {
+                        System.out.println("Самые большие  числа 1 и 3 равны " + one + " и равны между собой, число значением меньше " + two);
+                    } else{
+                        System.out.println("Самые большие  числа 2 и 3 равны " + two + " и равны между собой, число значением меньше " + one);
+                    }
+                }
+                else if (one > two) {
+                    System.out.println("Самое большее число " + three + " второе по старшенству число " + one + " самое маленькое число " +two);
+                }
+                else if (two > one) {
+                    System.out.println("Самое большее число " + three + " второе по старшенству число " + two + " самое маленькое число " + one);
+                }
+                else {
+                    System.out.println("Самое большее число " + three + " числа 1 и 2 равны между собой и равны " + one);
                 }
             }
 
-        }
-
+    }
 
 }
 
