@@ -261,11 +261,11 @@ public class Main {
     }
 
     public static void task7() {
-            System.out.println("          Задача 7");
+            System.out.println("          Задача 7.1");
 
-            int one = 150;
-            int two = 150;
-            int three = 150;
+            int one = 120;
+            int two = 120;
+            int three = 120;
 
             if (one == two && one == three) {
                 System.out.println("Все числа равны " + one);
@@ -324,8 +324,26 @@ public class Main {
                     System.out.println("Самое большее число " + three + " числа 1 и 2 равны между собой и равны " + one);
                 }
             }
+        System.out.println("      Задача 7.2");
+            if (one >= two && one >=three) {
+                if ( one != two || one != three){
+                    System.out.println("Максимально число " +one);
+                    }
+            }
+            else if (two >= one && two >=three) {
+                if (one != two || two != three) {
+                    System.out.println("Максимально число " + two);
+                }
+            }
+            else if ( three!= one || three != two) {
+                System.out.println("Максимально число " + three);
 
-    }
+            }
+            else {
+                System.out.println("Все числа равны");
+            }
+
+    }//task 7
 
 }
 
